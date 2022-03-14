@@ -7,6 +7,7 @@ export const getUser = () => ({
 
 export const setUser = (user) => ({
   type: SET_USER,
+  // user: user,
   user
 });
 
@@ -19,6 +20,7 @@ export default (state = initialState, action) => {
     case SET_USER:
       const { user } = action;
       return { ...state, user };
+    // return { ...state, user: user };
     default:
       return state;
   }

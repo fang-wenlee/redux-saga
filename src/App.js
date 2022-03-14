@@ -24,8 +24,9 @@ export default function App() {
   ];
   return (
     <div className="App">
-      {user && <h1> Hello, {user.firstName} </h1>}
-      <h1>Redux made easy</h1>
+      {/* <h1> Hello, {user.firstname} </h1> */}
+      {user && <h1> Hello, {user.firstname} </h1>}
+
       <h2> Total Votes: {count}</h2>
       {voters.map((voter) => (
         <Counter name={voter} />
